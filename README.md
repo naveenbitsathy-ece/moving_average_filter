@@ -241,8 +241,10 @@ endmodule
 
 ## 📂 i2c_clock.v
 
+```text
 100 kHz I²C Clock Enable
 1 kHz Sample Tick
+```
 
 ``` verilog
 `timescale 1ns / 1ps
@@ -289,6 +291,7 @@ endmodule
 
 ## 📂 ad7991_reader.v
 
+```text
 START
 ↓
 Address ADC
@@ -299,6 +302,7 @@ Read LSB
 ↓
 Store ADC Sample
 
+```
 ``` verilog
 
 `timescale 1ns / 1ps
@@ -485,6 +489,7 @@ endmodule
 ```
 ## 📂 moving_average_8.v
 
+```text
 Store 8 samples
 ↓
 Calculate Sum
@@ -492,6 +497,7 @@ Calculate Sum
 Divide by 8
 ↓
 Generate Filtered Data
+```
 
 ``` verilog
 `timescale 1ns / 1ps
@@ -538,6 +544,7 @@ endmodule
 ```
 ## 📂 dac_driver.v
 
+```text
 Load DAC Data
 ↓
 Generate SYNC
@@ -545,6 +552,7 @@ Generate SYNC
 Generate SCLK
 ↓
 Transmit DIN
+```
 
 ``` verilog
 `timescale 1ns / 1ps
