@@ -627,6 +627,9 @@ endmodule
 ![power](Images/Power_image.png)
 ## ⚙️ Pin assignment
 ![pin assignment](Images/Pin_mapping_image.png)
+## ⚙️ File structure
+![file](Images/File_structure.png)
+
 
 ---
 ## 🔌 FPGA I/O Mapping
@@ -676,3 +679,10 @@ The filtered digital data is then transmitted to the PMOD DA2 DAC, which reconst
 
 Finally, the output waveform is observed on an oscilloscope and compared with the original noisy input signal to verify the filtering performance.
 
+## 👥 Contributors
+
+Naveenraj S, Bannari Amman Institute Of Technology ( [linkedin](https://www.linkedin.com/in/naveenraj07/) )
+
+Muthukumar J, Bannari Amman Institute Of Technology ( [linkedin](https://www.linkedin.com/in/muthu-kumar-j42/) )
+
+ 
