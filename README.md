@@ -52,6 +52,7 @@ Design and implement an 8-Point Moving Average Filter (MAF) on an FPGA to reduce
 
 ## 🛠 Tools & Hardware
 - Software: Vivado ML Edition (Standard) 2024.2
-- Hardware: ZedBoard Zynq-7000 ARM / FPGA SoC Development Board,Pmod AD2,Pmod DA2 convertors 
+- Hardware: ZedBoard Zynq-7000 ARM / FPGA SoC Development Board
+- Pmod AD2,Pmod DA2 convertors 
 ---
 
