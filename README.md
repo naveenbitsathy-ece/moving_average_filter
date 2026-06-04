@@ -47,3 +47,11 @@ Design and implement an 8-Point Moving Average Filter (MAF) on an FPGA to reduce
 * Designed entirely using Verilog HDL.
 * Implemented and tested on a ZedBoard FPGA.
 * Uses modular design for easy debugging and future upgrades.
+
+---
+
+## 🛠 Tools & Hardware
+- Software: Vivado ML Edition (Standard) 2024.2
+- Hardware: ZedBoard Zynq-7000 ARM / FPGA SoC Development Board,Pmod AD2,Pmod DA2 convertors 
+---
+
