@@ -609,7 +609,26 @@ module dac_driver (
     end
 endmodule
 ```
+## 🧪 Simulation
+ ![📸 wave form](Images/Simulation_image.png)
 
+---
+
+## ⚙️ Schematic View
+
+![schematic](Images/Schematic_image.png)
+ ## ⚙️Technology view
+![Technology](Images/simulation_fullvie_image.png)
+## ⚙️Resource utilisation
+![resource](Images/Utilisation_image.png)
+## ⚙️Timing analysis
+![Timing](Images/Timing_summary_image.png)
+## ⚙️power summary
+![power](Images/Power_image.png)
+## ⚙️ Pin assignment
+![pin assignment](Images/Pin_mapping_image.png)
+
+---
 ## 🔌 FPGA I/O Mapping
 
 | Signal Name | Direction | Package Pin | I/O Standard | Description                            |
