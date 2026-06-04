@@ -609,3 +609,51 @@ module dac_driver (
     end
 endmodule
 ```
+
+## 🔌 FPGA I/O Mapping
+
+| Signal Name | Direction | Package Pin | I/O Standard | Description                            |
+| ----------- | --------- | ----------- | ------------ | -------------------------------------- |
+| clk         | Input     | Y9          | LVCMOS33     | 100 MHz system clock                   |
+| rst_n       | Input     | P16         | LVCMOS33     | Active-low reset signal                |
+| scl         | Inout     | V12         | LVCMOS33     | I²C Serial Clock connected to PMOD AD2 |
+| sda         | Inout     | W12         | LVCMOS33     | I²C Serial Data connected to PMOD AD2  |
+| dac_sync    | Output    | AB11        | LVCMOS33     | DAC Chip Select (SYNC)                 |
+| dac_sclk    | Output    | AA8         | LVCMOS33     | DAC Serial Clock                       |
+| dac_din     | Output    | AB10        | LVCMOS33     | DAC Serial Data Input                  |
+
+
+## 📡 PMOD Interface Mapping
+
+| Module            | Signal | FPGA Port       |
+| ----------------- | ------ | --------------- |
+| PMOD AD2 (AD7991) | SCL    | scl (V12)       |
+| PMOD AD2 (AD7991) | SDA    | sda (W12)       |
+| PMOD DA2          | SYNC   | dac_sync (AB11) |
+| PMOD DA2          | SCLK   | dac_sclk (AA8)  |
+| PMOD DA2          | DIN    | dac_din (AB10)  |
+
+
+## 🔧 Hardware Setup
+
+| Device              | Connection             |
+| ------------------- | ---------------------- |
+| Waveform Generator  | PMOD AD2 VIN0 (V1)     |
+| PMOD AD2            | ZedBoard JE Port       |
+| PMOD DA2            | ZedBoard JA Port       |
+| Oscilloscope Probe  | PMOD DA2 Analog Output |
+| Oscilloscope Ground | PMOD DA2 GND           |
+
+
+## 💫 Implementation
+
+The noisy analog signal is generated using a waveform generator and applied to the PMOD AD2 (AD7991 ADC).
+
+The AD7991 samples the input signal at a rate of 1 kHz and converts it into 12-bit digital data. The FPGA reads these samples through the I²C interface.
+
+Each incoming sample is stored in an 8-sample window inside the FPGA. The Moving Average Filter continuously calculates the average of the latest eight samples, reducing random noise and smoothing the waveform.
+
+The filtered digital data is then transmitted to the PMOD DA2 DAC, which reconstructs the signal into an analog voltage.
+
+Finally, the output waveform is observed on an oscilloscope and compared with the original noisy input signal to verify the filtering performance.
+
