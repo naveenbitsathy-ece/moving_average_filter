@@ -148,14 +148,14 @@ STOP
 IDLE
 ```
 ## 📂 top.v
-
+```text 
 top.v
  ├─ controls everything
  ├─ calls i2c_clock
  ├─ calls ad7991_reader
  ├─ calls moving_average_8
  └─ calls dac_driver
-
+```
  ``` verilog
 `timescale 1ns / 1ps
 
