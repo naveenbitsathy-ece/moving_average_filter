@@ -833,6 +833,4 @@ Finally, the output waveform is observed on an oscilloscope and compared with th
 
 Naveenraj S, Bannari Amman Institute Of Technology ( [linkedin](https://www.linkedin.com/in/naveenraj07/) )
 
-Muthukumar J, Bannari Amman Institute Of Technology ( [linkedin](https://www.linkedin.com/in/muthu-kumar-j42/) )
-
  
