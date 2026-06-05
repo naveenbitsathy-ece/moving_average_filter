@@ -836,5 +836,6 @@ Naveenraj S, Bannari Amman Institute Of Technology ( [linkedin](https://www.link
  ## Conclusion
 
 This project marks my first step into Digital Signal Processing (DSP) using FPGA. Although the Moving Average Filter (MAF) is a simple design, it serves as a fundamental building block for understanding DSP concepts. Through this project, I gained hands-on experience in Verilog design, FPGA implementation, and digital signal processing.
+
 It strengthened my practical hardware development skills and provided a strong foundation for future DSP projects. I sincerely thank[Mr. Elango Sekar](https://www.linkedin.com/in/elango-sekar-8973b958/) for his guidance, support, and encouragement throughout this project.
 
