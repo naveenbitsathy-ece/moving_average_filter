@@ -9,8 +9,8 @@ module top_module_tb;
     reg clk;
     reg rst_n;
 
-    // reg scl_i;
-    // reg sda_i;
+    reg scl_i;
+    reg sda_i;
 
     wire scl_o;
     wire scl_t;
@@ -27,9 +27,6 @@ tri1 scl_bus;
 assign scl_bus = (scl_t) ? 1'bz : scl_o;
 assign sda_bus = (sda_t) ? 1'bz : sda_o;
 
-reg slave_drive;
-
-assign sda_bus = slave_drive ? 1'b0 : 1'bz;
     //------------------------------------------
     // Instantiate DUT
     //------------------------------------------
@@ -168,4 +165,8 @@ end
 
     end
 
+initial begin
+    $dumpfile("naveen.vcd");
+    $dumpvars(0,top_module_tb);
+end
 endmodule
