@@ -1,0 +1,59 @@
+| Port                | Direction | Role                                                                       |
+| ------------------- | --------- | -------------------------------------------------------------------------- |
+| `clk`               | Input     | FPGA system clock; controls the FSM                                        |
+
+| `rst_n`             | Input     | Active-low reset                                                           |
+
+| `fft_frame_valid`   | Input     | Tells the controller that the FFT buffer has collected all 16 samples      |
+
+| `buffer_data[11:0]` | Input     | **Actual 12-bit sample read from the FFT buffer**                          |
+
+| `buffer_read_en`    | Output    | Tells the FFT buffer: **"Give me the sample."**                            |
+
+| `buffer_addr[3:0]`  | Output    | Selects which buffer location to read: `0 → 15`                            |
+
+| `fft_start`         | Output    | Tells the FFT processing section that the complete frame has been supplied |
+
+| `fft_valid`         | Output    | Indicates that the current `buffer_data` is valid for FFT processing       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 FFT BUFFER
+              ┌────────────────┐
+              │                │
+buffer_addr ─►│ Address        │
+              │                │
+read_en ─────►│ Read Enable    │
+              │                │
+              │                │
+buffer_data ◄─│ Data           │
+              │                │
+frame_valid ─►│ Frame Valid    │
+              └───────┬────────┘
+                      │
+                      │ buffer_data
+                      ▼
+             ┌──────────────────┐
+             │ INPUT CONTROLLER │
+             └────────┬─────────┘
+                      │
+                      │ fft_valid
+                      ▼
+              ┌──────────────┐
+              │ FFT DATA     │
+              │ REGISTERS    │
+              └──────┬───────┘
+                     │
+                     ▼
+                BUTTERFLY

@@ -1,0 +1,14 @@
+                  BUTTERFLY
+             ┌──────────────────┐
+             │                  │
+A_real ─────►│                  │────► X_real
+A_imag ─────►│                  │────► X_imag
+             │   B × W          │
+B_real ─────►│      ↓           │────► Y_real
+B_imag ─────►│   A ± (B×W)      │────► Y_imag
+             │                  │
+W_real ─────►│                  │
+W_imag ─────►│                  │
+             │                  │
+valid_in ───►│                  │────► valid_out
+             └──────────────────┘

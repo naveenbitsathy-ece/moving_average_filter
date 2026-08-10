@@ -15,7 +15,8 @@ module input_controller #(
     output reg                   buffer_read_en,
     output reg [3:0]             buffer_addr,
 
-    // Control signals to FFT core
+        // To Butterfly / FFT core
+    output reg [DATA_WIDTH-1:0]  fft_data,   // input to butterfly 
     output reg                   fft_start,
     output reg                   fft_valid
 );
@@ -80,6 +81,7 @@ module input_controller #(
                 begin
 
                     buffer_read_en <= 1'b1;
+                     fft_data  <= buffer_data;
                     fft_valid      <= 1'b1;
 
                     //--------------------------------
