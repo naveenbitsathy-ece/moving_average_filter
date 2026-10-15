@@ -1,0 +1,19 @@
+# Simultaneously Switching Noise (SSN) Report
+# Version: 1.0
+# Created on: Thu Oct 15 14:39:29 2026
+# Result Name: ssn_1
+# Project Name: moving_average_filter
+# Project Family: Zynq-7000
+# Part: xc7z020clg484
+# Temperature Grade: commercial
+# SSN Data Version: Production
+# Package Version: FINAL 2012-06-26
+# Package Pin Delay Version: VERS. 2.0 2012-06-26
+
+IO Bank,VCCO,Signal Name,Pin Number,IO Standard,Drive (mA),Slew Rate,OFFCHIP_TERM,Remaining Margin (%),Result, Notes
+
+
+# Reference Links
+# Safe to Ignore SSN Failure on MIG Designs - http://www.xilinx.com/support/answers/36141.htm
+# SSN Mitigation Strategy - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22Mitigate%22
+# Off-chip Terminations - http://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf#search=%22terminated%22

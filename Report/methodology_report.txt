@@ -1,0 +1,41 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Oct 15 14:37:02 2026
+| Host         : DESKTOP-KTVT43G running 64-bit major release  (build 9200)
+| Command      : report_methodology -name ultrafast_methodology_2 -file C:/Users/naveenraj.DESKTOP-KTVT43G/Downloads/methodology_report.txt -checks {ULMTCS-2 ULMTCS-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-6 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-77 CLKC-76 CLKC-54 CLKC-53 CLKC-78 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: rtl-elabdesign_1_wrapper
+          Floorplan: rtl_1
+      Design limits: <entire design considered>
+
+            Checks: CLKC-1 CLKC-2 CLKC-3 CLKC-4 CLKC-5 CLKC-9 CLKC-18 CLKC-35 
+CLKC-36 CLKC-37 CLKC-38 CLKC-53 CLKC-54 CLKC-76 CLKC-77 CLKC-78 HPDR-1 RAKN-1 
+RAMD-1 RAMF-1 RAMP-1 RCBG-1 RCCL-1 RFCF-1 RFFH-1 RFFI-1 RFRA-1 RFRC-1 RFTL-1 
+RMIR-1 RMOR-1 ROAS-1 RROR-1 RRRS-1 ULMTCS-1 ULMTCS-2 XDCB-1 XDCB-2 XDCB-3 XDCB-4
+XDCB-5 XDCB-6 XDCC-1 XDCC-2 XDCC-3 XDCC-4 XDCC-5 XDCC-6 XDCC-7 XDCC-8 XDCH-1 
+XDCH-2
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+
