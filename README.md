@@ -514,9 +514,7 @@ This indicates the total number of samples for which the FPGA output differs fro
 
 - **Zero error:** The FPGA output matches the MATLAB reference.
 - **Non-zero error:** A difference exists between the outputs.
-- 
-Possible causes include initialization errors, handshake timing issues, arithmetic differences, or data-alignment problems.
----
+
 
 ## 13. Results and Analysis
 
