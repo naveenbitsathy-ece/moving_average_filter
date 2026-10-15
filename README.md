@@ -617,12 +617,12 @@ Moving-average filters are useful in:
 
 ---
 
-## 18. Author
+## 17. Author
 
 **Name:** Naveenraj S
 **Department:** Electronics and Communication Engineering  
 **Institution:** Bannari Amman Institute of Technology
-
+**Linkedin:** [https://www.linkedin.com/in/naveenraj07/](url)
 ### Project Summary
 
 This project demonstrates the integration of MATLAB-based DSP analysis, embedded C software, UART communication, AXI GPIO, and Verilog RTL on a Zynq-7000 FPGA platform. It provides a practical workflow for validating a hardware DSP implementation against a software reference.
