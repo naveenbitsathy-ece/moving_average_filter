@@ -586,11 +586,6 @@ Possible causes:
 - Rounding or integer-division differences.
 - Stale output values or incorrect handshake timing.
 - Byte-order or sample-alignment errors.
-
-### Timing Constraints Are Not Met
-
-Inspect the critical timing path and clock constraints before modifying the design. Optimize the actual critical path rather than changing the timing target merely to remove a warning.
-
 ---
 
 ## 15. Applications
