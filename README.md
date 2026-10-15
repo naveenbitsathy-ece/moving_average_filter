@@ -514,9 +514,7 @@ This indicates the total number of samples for which the FPGA output differs fro
 
 - **Zero error:** The FPGA output matches the MATLAB reference.
 - **Non-zero error:** A difference exists between the outputs.
-- 
-Possible causes include initialization errors, handshake timing issues, arithmetic differences, or data-alignment problems.
----
+
 
 ## 13. Results and Analysis
 
@@ -524,7 +522,7 @@ Possible causes include initialization errors, handshake timing issues, arithmet
 
 Add the actual waveform screenshot from MATLAB.
 
-![Input, reference and FPGA output comparison](image.png)
+![Input, reference and FPGA output comparison](results/waveform.png)
 The comparison should include:
 
 - Input signal.
@@ -586,11 +584,6 @@ Possible causes:
 - Rounding or integer-division differences.
 - Stale output values or incorrect handshake timing.
 - Byte-order or sample-alignment errors.
-
-### Timing Constraints Are Not Met
-
-Inspect the critical timing path and clock constraints before modifying the design. Optimize the actual critical path rather than changing the timing target merely to remove a warning.
-
 ---
 
 ## 15. Applications
