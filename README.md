@@ -561,7 +561,7 @@ The MATLAB analysis should save the following columns:
 
 ---
 
-## 15. Troubleshooting
+## 14. Troubleshooting
 
 ### UART Timeout
 
@@ -593,7 +593,7 @@ Inspect the critical timing path and clock constraints before modifying the desi
 
 ---
 
-## 16. Applications
+## 15. Applications
 
 Moving-average filters are useful in:
 
@@ -606,22 +606,20 @@ Moving-average filters are useful in:
 
 ---
 
-## 17. Future Improvements
+## 16. Future Improvements
 
 - Verify multiple window sizes, including 4, 8, and 12 points.
 - Improve the sample-valid/output-valid handshake.
 - Add automated test vectors and regression testing.
 - Optimize the RTL for timing closure.
 - Measure FPGA resource utilization.
-- Measure processing latency and throughput.
-- Explore streaming data interfaces such as AXI4-Stream.
 - Extend the design to FIR filters, FFT processing, and additional DSP algorithms.
 
 ---
 
 ## 18. Author
 
-**Name:** [Your Name]  
+**Name:** Naveenraj S
 **Department:** Electronics and Communication Engineering  
 **Institution:** Bannari Amman Institute of Technology
 
