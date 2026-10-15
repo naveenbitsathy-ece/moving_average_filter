@@ -21,11 +21,10 @@ The project integrates MATLAB, embedded C, AXI GPIO, and custom RTL to demonstra
 - [11. Implementation Procedure](#11-implementation-procedure)
 - [12. MATLAB Processing and Verification](#12-matlab-processing-and-verification)
 - [13. Results and Analysis](#13-results-and-analysis)
-- [14. FPGA Timing Analysis](#14-fpga-timing-analysis)
-- [15. Troubleshooting](#15-troubleshooting)
-- [16. Applications](#16-applications)
-- [17. Future Improvements](#17-future-improvements)
-- [18. Author](#18-author)
+- [14. Troubleshooting](#15-troubleshooting)
+- [15. Applications](#16-applications)
+- [16. Future Improvements](#17-future-improvements)
+- [17. Author](#18-author)
 
 ---
 
@@ -559,48 +558,6 @@ The MATLAB analysis should save the following columns:
 | Timing constraints | A timing violation was reported; optimization is required |
 
 **Note:** Results depend on the current RTL, bitstream, and Vitis application. Repeat the tests after changes and update this table with the latest measured results.
-
----
-
-## 14. FPGA Timing Analysis
-
-Vivado reports timing information to verify whether the implemented circuit can operate at the required clock frequency.
-
-### Reported Timing Results
-
-| Metric | Observed value |
-|---|---:|
-| Worst Negative Slack (WNS) | -14.025 ns |
-| Total Negative Slack (TNS) | -222.774 ns |
-| Failing endpoints | 2066 |
-| Timing constraints | Not met |
-
-These values are from an observed Vivado report and should be updated after the design is optimized and implemented again.
-
-### What Does This Mean?
-
-A negative WNS indicates that the worst reported setup path does not meet its required arrival time. The number of failing endpoints indicates that many timing endpoints are affected.
-
-Potential causes include:
-
-- A long combinational arithmetic path.
-- Incorrect or incomplete clock constraints.
-- High-fanout control signals.
-- Excessive routing delay.
-- An inefficient RTL implementation.
-
-### Recommended Debugging
-
-1. Open the implemented design in Vivado.
-2. Generate a Timing Summary report.
-3. Inspect the worst setup path.
-4. Identify its startpoint and endpoint.
-5. Examine logic levels and cell versus routing delay.
-6. Verify the clock constraints and actual clock configuration.
-7. Optimize the critical RTL path if necessary.
-8. Run implementation and review the timing report again.
-
-Do not claim timing closure until the updated report confirms that the relevant constraints are met.
 
 ---
 
