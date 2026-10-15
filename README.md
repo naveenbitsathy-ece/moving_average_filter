@@ -333,9 +333,9 @@ Each input sample is represented using two bytes.
 
 For a sample value \(S\):
 
-\[
-S = \text{LowByte} + 256 \times \text{HighByte}
-\]
+**Formula:**
+
+`S = LowByte + (256 × HighByte)`
 
 The MATLAB code creates the bytes as follows:
 
