@@ -515,7 +515,7 @@ This indicates the total number of samples for which the FPGA output differs fro
 
 - **Zero error:** The FPGA output matches the MATLAB reference.
 - **Non-zero error:** A difference exists between the outputs.
-
+- 
 Possible causes include initialization errors, handshake timing issues, arithmetic differences, or data-alignment problems.
 ---
 
@@ -525,7 +525,7 @@ Possible causes include initialization errors, handshake timing issues, arithmet
 
 Add the actual waveform screenshot from MATLAB.
 
-![Input, reference and FPGA output comparison]([results/figures/output_comparison.png](https://github.com/naveenbitsathy-ece/moving_average_filter/blob/main/image.png?raw=true))
+![Input, reference and FPGA output comparison]([https://github.com/naveenbitsathy-ece/moving_average_filter/blob/main/image.png?raw=true])
 
 The comparison should include:
 
