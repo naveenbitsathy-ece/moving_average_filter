@@ -525,8 +525,7 @@ Possible causes include initialization errors, handshake timing issues, arithmet
 
 Add the actual waveform screenshot from MATLAB.
 
-![Input, reference and FPGA output comparison]([image.png])
-
+![Input, reference and FPGA output comparison](image.png)
 The comparison should include:
 
 - Input signal.
