@@ -619,7 +619,7 @@ Moving-average filters are useful in:
 
 ## 17. Author
 
-**Name:** Naveenraj S
+**Name:** Naveenraj S /
 **Department:** Electronics and Communication Engineering  
 **Institution:** Bannari Amman Institute of Technology
 **Linkedin:** [https://www.linkedin.com/in/naveenraj07/](url)
