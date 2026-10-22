@@ -585,6 +585,9 @@ Possible causes:
 - Rounding or integer-division differences.
 - Stale output values or incorrect handshake timing.
 - Byte-order or sample-alignment errors.
+
+  Video link - https://drive.google.com/file/d/15ZKwI3JTuDE7ShU6SKsqxNZ1-sTxZ7om/view?usp=sharing
+  Output sheet link - [https://docs.google.com/spreadsheets/d/1_KEN69zjv6rx97owJ5PKCCP_mXthMQ2X/edit?usp=sharing&ouid=111938485143431863520&rtpof=true&sd=true](url)
 ---
 
 ## 15. Applications
@@ -634,9 +637,9 @@ Potential optimization approaches include pipelining the arithmetic operations, 
 
 ### Conclusion
 
-Increasing the FIR filter length increases hardware resource utilization and routing complexity. The 4-tap configuration provides the largest timing margin and lowest LUT usage among the tested configurations, while the 12-tap configuration requires additional timing optimization.
+Increasing the filter length increases hardware resource utilization and routing complexity. The 4-tap configuration provides the largest timing margin and lowest LUT usage among the tested configurations, while the 12-tap configuration requires additional timing optimization.
 
-These results demonstrate the trade-off between FIR filter length, hardware cost, and timing performance in FPGA-based digital signal processing.
+These results demonstrate the trade-off between filter length, hardware cost, and timing performance in FPGA-based digital signal processing.
 
 *Note: All measurements are specific to the tested implementation. For a fair comparison, use consistent FPGA device settings, clock constraints, implementation settings, and power-analysis assumptions.*
 
