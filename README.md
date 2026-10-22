@@ -586,8 +586,8 @@ Possible causes:
 - Stale output values or incorrect handshake timing.
 - Byte-order or sample-alignment errors.
 
-  Video link - [https://drive.google.com/file/d/15ZKwI3JTuDE7ShU6SKsqxNZ1-sTxZ7om/view?usp=sharing](url)
-  Output sheet link - [https://docs.google.com/spreadsheets/d/1_KEN69zjv6rx97owJ5PKCCP_mXthMQ2X/edit?usp=sharing&ouid=111938485143431863520&rtpof=true&sd=true](url)
+ - Video link - [https://drive.google.com/file/d/15ZKwI3JTuDE7ShU6SKsqxNZ1-sTxZ7om/view?usp=sharing](url)
+ -  Output sheet link - [https://docs.google.com/spreadsheets/d/1_KEN69zjv6rx97owJ5PKCCP_mXthMQ2X/edit?usp=sharing&ouid=111938485143431863520&rtpof=true&sd=true](url)
 ---
 
 ## 15. Applications
