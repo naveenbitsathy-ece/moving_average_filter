@@ -22,9 +22,10 @@ The project integrates MATLAB, embedded C, AXI GPIO, and custom RTL to demonstra
 - [12. MATLAB Processing and Verification](#12-matlab-processing-and-verification)
 - [13. Results and Analysis](#13-results-and-analysis)
 - [14. Troubleshooting](#15-troubleshooting)
-- [15. Applications](#16-applications)
-- [16. Future Improvements](#17-future-improvements)
-- [17. Author](#18-author)
+- [15. Filter Hardware Performance Analysis](#15-filter Hardware Performance Analysis)
+- [16. Applications](#16-applications)
+- [17. Future Improvements](#17-future-improvements)
+- [18. Author](#18-author)
 
 ---
 
@@ -599,7 +600,48 @@ Moving-average filters are useful in:
 
 ---
 
-## 16. Future Improvements
+## FIR Filter Hardware Performance Analysis
+
+This section presents the FPGA implementation results for 16-bit FIR filters with 4, 8, and 12 taps. The comparison evaluates hardware resource utilization, timing performance, estimated on-chip power, and routing complexity.
+
+### Implementation Results
+
+| Performance Metric | 4-Tap FIR | 8-Tap FIR | 12-Tap FIR |
+|:--|--:|--:|--:|
+| Input Data Width | 16 bits | 16 bits | 16 bits |
+| LUTs Used | 470 | 506 | 651 |
+| LUTRAM | 60 | 60 | 60 |
+| Flip-Flops (FFs) | 781 | 845 | 909 |
+| BUFG | 1 | 1 | 1 |
+| WNS (ns) | +4.129 | +2.103 | **−0.475** |
+| Estimated On-Chip Power (W) | 1.695 | 1.712 | 1.714 |
+| Fully Routed Nets | 1,324 | 1,464 | 1,653 |
+
+### Performance Observations
+
+- **Resource Utilization:** LUT usage increases from 470 to 651, while flip-flop usage increases from 781 to 909 as the filter length increases.
+- **Timing Performance:** WNS decreases from +4.129 ns for the 4-tap filter to +2.103 ns for the 8-tap filter. The 12-tap filter has a negative WNS of −0.475 ns.
+- **Power Consumption:** Estimated on-chip power increases from 1.695 W to 1.714 W across the tested configurations.
+- **Routing Complexity:** Fully routed nets increase from 1,324 to 1,653 as the filter length increases.
+
+### Timing Analysis
+
+The 4-tap and 8-tap configurations have positive Worst Negative Slack (WNS), indicating positive timing slack for the paths covered by the timing analysis.
+
+The 12-tap configuration has a **WNS of −0.475 ns**, indicating that the worst analyzed timing path violates its required timing by 0.475 ns. Timing optimization is therefore required if the design must meet the current clock constraints.
+
+Potential optimization approaches include pipelining the arithmetic operations, balancing the adder tree, and reviewing the critical path in Vivado's timing reports.
+
+### Conclusion
+
+Increasing the FIR filter length increases hardware resource utilization and routing complexity. The 4-tap configuration provides the largest timing margin and lowest LUT usage among the tested configurations, while the 12-tap configuration requires additional timing optimization.
+
+These results demonstrate the trade-off between FIR filter length, hardware cost, and timing performance in FPGA-based digital signal processing.
+
+*Note: All measurements are specific to the tested implementation. For a fair comparison, use consistent FPGA device settings, clock constraints, implementation settings, and power-analysis assumptions.*
+
+
+## 17. Future Improvements
 
 - Verify multiple window sizes, including 4, 8, and 12 points.
 - Improve the sample-valid/output-valid handshake.
@@ -610,7 +652,7 @@ Moving-average filters are useful in:
 
 ---
 
-## 17. Author
+## 18. Author
 
 **Name:** Naveenraj S  
 **Department:** Electronics and Communication Engineering  
