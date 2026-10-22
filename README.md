@@ -600,7 +600,7 @@ Moving-average filters are useful in:
 
 ---
 
-## 16.FIR Filter Hardware Performance Analysis
+## 16.Filter Hardware Performance Analysis
 
 This section presents the FPGA implementation results for 16-bit FIR filters with 4, 8, and 12 taps. The comparison evaluates hardware resource utilization, timing performance, estimated on-chip power, and routing complexity.
 
