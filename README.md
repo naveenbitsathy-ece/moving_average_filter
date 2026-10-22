@@ -22,7 +22,7 @@ The project integrates MATLAB, embedded C, AXI GPIO, and custom RTL to demonstra
 - [12. MATLAB Processing and Verification](#12-matlab-processing-and-verification)
 - [13. Results and Analysis](#13-results-and-analysis)
 - [14. Troubleshooting](#15-troubleshooting)
-- [15. Filter Hardware Performance Analysis](#15-filter Hardware Performance Analysis)
+- [15. Filter Hardware Performance Analysis](#15-[filter Hardware Performance Analysis](url))
 - [16. Applications](#16-applications)
 - [17. Future Improvements](#17-future-improvements)
 - [18. Author](#18-author)
@@ -600,7 +600,7 @@ Moving-average filters are useful in:
 
 ---
 
-## FIR Filter Hardware Performance Analysis
+## 16.FIR Filter Hardware Performance Analysis
 
 This section presents the FPGA implementation results for 16-bit FIR filters with 4, 8, and 12 taps. The comparison evaluates hardware resource utilization, timing performance, estimated on-chip power, and routing complexity.
 
