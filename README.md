@@ -22,7 +22,7 @@ The project integrates MATLAB, embedded C, AXI GPIO, and custom RTL to demonstra
 - [12. MATLAB Processing and Verification](#12-matlab-processing-and-verification)
 - [13. Results and Analysis](#13-results-and-analysis)
 - [14. Troubleshooting](#15-troubleshooting)
-- [15. Filter Hardware Performance Analysis](#15-[filter Hardware Performance Analysis](url))
+- [15. Filter Hardware Performance Analysis](#15-filter-hardware-performance-analysis)
 - [16. Applications](#16-applications)
 - [17. Future Improvements](#17-future-improvements)
 - [18. Author](#18-author)
